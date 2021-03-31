@@ -1,0 +1,28 @@
+const GamingMachain = [
+    {name:'AMD Ryzen 7 3800X Gaming PC',price:1250,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+],photoUrl:'https://i.ibb.co/ZcS6PXm/699a35a34bf53133183593254190425f.png'
+        },  {name:'AMD Ryzen 5 3500X Gaming PC',price:1100,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+    ],photoUrl:'https://i.ibb.co/jVWzD7s/2021-02-17-image-16.jpg'
+            },  {name:'Gaming PC 10th Gen Core i5-10400f',price:2250,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+        ],photoUrl:'https://i.ibb.co/0VNHHB1/57938d7add0895e1538b4a56.jpg'
+                },  {name:'AMD Ryzen 7 3800X Gaming PC',price:950,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+            ],photoUrl:'https://i.ibb.co/QKXhbXv/6602117d976420c585b4ba39add11e2c.jpg'
+                    },  {name:'AMD Ryzen 5 3600 Gaming PC',price:1250,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+                ],photoUrl:'https://i.ibb.co/fDd9kS2/download.jpg'
+                        },  {name:'AMD Ryzen 7 3800X Gaming PC',price:780,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+                    ],photoUrl:'https://i.ibb.co/hyv66nj/eda64c0a10fb395884fddec13045439b-e1543027448522.jpg'
+                            },  {name:'Intel 10th Gen Core i5-10600 Gaming PC',price:1250,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+                        ],photoUrl:'https://i.ibb.co/3dYgtPV/pc-gaming.jpg'
+                                },  {name:'AMD Ryzen 7 3800X Gaming PC',price:1290,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+                            ],photoUrl:'https://i.ibb.co/3dYgtPV/pc-gaming.jpg'
+                                    },  {name:'AMD Ryzen 7 3700X Gaming PC',price:670,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+                                ],photoUrl:'https://i.ibb.co/ZcS6PXm/699a35a34bf53133183593254190425f.png'
+                                        },  {name:'Gaming PC Core i5 7th 7640x',price:1300,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+                                    ],photoUrl:'https://i.ibb.co/ZcS6PXm/699a35a34bf53133183593254190425f.png'
+                                            },  {name:'AMD Ryzen 7 3800X Gaming PC',price:1600,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+                                        ],photoUrl:'https://i.ibb.co/hyv66nj/eda64c0a10fb395884fddec13045439b-e1543027448522.jpg'
+                                                },  {name:'AMD Ryzen 5 5600X Gaming PC',price:7600,features:['Gigabyte Z390 M GAMING 9th Gen Micro ATX Motherboard',' Intel Core i9-9900K 9th Gen Processor','  16GB RAM + 1TB HDD + 250GB SSD','RTX 3070 Advanced OC-V 8GB Graphics Card'
+                                            ],photoUrl:'https://i.ibb.co/ZcS6PXm/699a35a34bf53133183593254190425f.png'
+                                                    }
+];
+export default GamingMachain;

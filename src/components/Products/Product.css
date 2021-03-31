@@ -1,0 +1,16 @@
+.buyBtn{
+    padding: 13px;
+}
+.buyBtn:hover{
+   box-shadow: 5px 5px 20px rgb(190, 184, 196);
+}
+.buyContainear{
+  text-align: center;
+}
+.productPrice{
+    font-size: 30px;
+    color: rgb(51, 26, 26);
+}
+.ProductImg{
+    width:150px
+}

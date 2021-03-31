@@ -9,6 +9,8 @@ import Home from "./components/Home/Home";
 import LogIn from './components/LogIn/LogIn'
 import CheckOut from './components/CheckOut/CheckOut'
 import Admin from "./components/Admin/Admin";
+import AddProductd from "./components/AddProductd/AddProductd";
+import ManageProduct from "./components/ManageProduct/ManageProduct";
 function App() {
   return (
     <Router>
@@ -46,6 +48,12 @@ function App() {
           <Admin></Admin>
         </Route>
       </Switch>
+      <Route path='/admin/addProduct'>
+          <AddProductd></AddProductd>
+        </Route>
+        <Route path='/admin/manageProduct'>
+         <ManageProduct></ManageProduct>
+        </Route>
     </div>
   </Router>
   );

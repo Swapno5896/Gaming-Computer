@@ -1,7 +1,7 @@
 # Gaming Machan For game lovers
 
 
-## Features\
+## Features
 In hear you can take a look of highquality of pc, that you can't get anywhere else
 
 
