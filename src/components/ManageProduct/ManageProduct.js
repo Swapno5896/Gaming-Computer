@@ -4,7 +4,7 @@ import EditProduct from '../EditProduct/EditProduct';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-
+import Loader from "react-loader-spinner";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -30,6 +30,7 @@ const ManageProduct = () => {
 <h3>this is home</h3>
 
 <Grid container spacing={3}>
+<Loader type="TailSpin" color="#00BFFF" height={80} width={80} />
 {
                 products.map(product=> <EditProduct product={product}></EditProduct>)
             }

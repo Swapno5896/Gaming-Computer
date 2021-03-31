@@ -28,7 +28,7 @@ const Products = (props) => {
     <div>
     <h4>{name}</h4>
         {
-            features.map(fe=> <li>{fe}</li>)
+          features&&  features.map(fe=> <li>{fe}</li>)
         }
         <div className='buyContainear'> 
         <p className='productPrice'>Price only : {price}</p>
