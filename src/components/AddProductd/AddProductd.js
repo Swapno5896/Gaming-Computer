@@ -70,7 +70,7 @@ const AddProductd = () => {
     }
     return (
         <div style={{margin:'0px 20%'}}>
-            <h3>this is add product</h3>
+           
             {/* <form className={classes.root} noValidate autoComplete="off">
                 <TextField  onBlur={setProductName} id="filled-basic" label="Enter Product Name" variant="filled" />
                 <TextField required id="filled-basic" label="Enter Feature" variant="filled" />
@@ -80,7 +80,7 @@ const AddProductd = () => {
             </form> */}
           <div style={{margin:'0px 50px'}}> 
           <form action="setProductName">
-            <h2>hallo</h2>
+        
             <input onBlur={setProductName} placeholder='Enter Product Price'  required type="text"/>
             <input onBlur={setProductPrice} placeholder='Enter Product Price'  required type="text"/>
           

@@ -11,26 +11,13 @@ import CheckOut from './components/CheckOut/CheckOut'
 import Admin from "./components/Admin/Admin";
 import AddProductd from "./components/AddProductd/AddProductd";
 import ManageProduct from "./components/ManageProduct/ManageProduct";
+import Header from './components/Header/Header'
 function App() {
   return (
     <Router>
+      <Header></Header>
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/logIn">Log in</Link>
-          </li>
-          <li>
-            <Link to="/checkOut">checkOut</Link>
-          </li>
-          <li>
-           <Link to="/admin">Admin</Link>
-          </li>
-        </ul>
-      </nav>
+   
 
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}

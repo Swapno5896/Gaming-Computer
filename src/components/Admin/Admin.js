@@ -18,6 +18,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import AddProductd from '../AddProductd/AddProductd';
 import ManageProduct from '../ManageProduct/ManageProduct';
+import Header from '../Header/Header'
 import {
   BrowserRouter as Router,
   Switch,
@@ -74,7 +75,7 @@ function ResponsiveDrawer(props) {
       <div className={classes.toolbar} />
       <Divider />
       <List>
-        {['manage product', 'Add product', 'Edit product', 'Drafts'].map((text, index) => (
+        {[   <Link to="/admin/addProduct">   <button>ADD product</button></Link>,<Link to="/admin/manageProduct">   <button>Manage product</button></Link> ].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
             <ListItemText primary={text} />
@@ -110,9 +111,10 @@ function ResponsiveDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
+          <Header></Header>
+          {/* <Typography variant="h6" noWrap>
             Responsive drawer
-          </Typography>
+          </Typography> */}
         </Toolbar>
       </AppBar>
       <nav className={classes.drawer} aria-label="mailbox folders">
@@ -148,8 +150,7 @@ function ResponsiveDrawer(props) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Link to="/admin/addProduct">   <button>ADD product</button></Link>
-        <Link to="/admin/manageProduct">   <button>Manage product</button></Link>
+
 
         
        
