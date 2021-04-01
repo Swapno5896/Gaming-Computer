@@ -5,7 +5,7 @@ const CheckOut = () => {
     const [loggedInUser, setLoggedInUser,addedProduct, setAddedProduct] = useContext(UserContext);
     const handelCheckOut = ()=>{
         const order = {...loggedInUser,...addedProduct}
-        // fetch('http://localhost:5000/addToCart',{
+        // fetch('https://gamenig.herokuapp.com/addToCart',{
         //     method:'POST',
         //     headers:{'Content-Type':'application/json'},
         //         body:JSON.stringify(order)
@@ -14,7 +14,7 @@ const CheckOut = () => {
         //             })
 
 
-                    fetch('http://localhost:5000/addToCart',{
+                    fetch('https://gamenig.herokuapp.com/addToCart',{
                         method:'POST',
                         headers:{'Content-Type':'application/json'},
                         body:JSON.stringify([order])

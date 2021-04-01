@@ -60,7 +60,7 @@ const AddProductd = () => {
     }
     const addProduct = ()=>{
       delete addedproduct.isBtnDisable;
-        fetch('http://localhost:5000/addProduct',{
+        fetch('https://gamenig.herokuapp.com/addProduct',{
           method:'POST',
           headers:{'Content-Type':'application/json'},
           body:JSON.stringify(addedproduct)

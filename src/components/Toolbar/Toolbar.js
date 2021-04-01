@@ -21,6 +21,11 @@ import {
     Route,
     Link
   } from "react-router-dom";
+  import { useContext } from 'react';
+import { UserContext } from '../../App';
+
+
+
 const styles = theme => ({
   grow: {
     flexGrow: 1
@@ -193,6 +198,7 @@ class ToolbarComponent extends React.Component {
             <Link style={{color:'red',padding:'0px 9px'}} to="/">Home</Link>
             <Link style={{color:'red' ,padding:'0px 9px'}} to="/checkOut">checkOut</Link>
             <Link style={{color:'red' ,padding:'0px 9px'}} to="/admin">Admin</Link>
+            <Link style={{color:'red' ,padding:'0px 9px'}} to="/order">Order</Link>
             </Typography>
             <div className={classes.search}>
               <div className={classes.searchIcon}>
@@ -210,7 +216,7 @@ class ToolbarComponent extends React.Component {
             <div className={classes.grow} />
             <div className={classes.sectionDesktop}>
               <IconButton aria-label="show 4 new mails" color="inherit">
-                <Badge badgeContent={4} color="secondary">
+                <Badge badgeContent={1} color="secondary">
                   <ShoppingCartIcon />
                 </Badge>
               </IconButton>
@@ -219,10 +225,11 @@ class ToolbarComponent extends React.Component {
                 color="inherit"
               >
                 <Badge badgeContent={17} color="secondary">
-                  <NotificationsIcon />
+                <Link style={{color:'red' ,padding:'0px 9px'}} to="/logIn">Log In</Link>
+
                 </Badge>
               </IconButton>
-              <IconButton
+              {/* <IconButton
                 edge="end"
                 aria-label="account of current user"
                 aria-controls={menuId}
@@ -231,7 +238,7 @@ class ToolbarComponent extends React.Component {
                 color="inherit"
               >
                 <AccountCircle />
-              </IconButton>
+              </IconButton> */}
             </div>
             <div className={classes.sectionMobile}>
               <IconButton

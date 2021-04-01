@@ -19,7 +19,7 @@ const ManageProduct = () => {
     const classes = useStyles();
     const [products, setProducts] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://gamenig.herokuapp.com/products')
         .then(res=>res.json())
         .then(res=>setProducts(res))
     },[])
@@ -30,7 +30,7 @@ const ManageProduct = () => {
 <h3>this is home</h3>
 
 <Grid container spacing={3}>
-<Loader type="TailSpin" color="#00BFFF" height={80} width={80} />
+
 {
                 products.map(product=> <EditProduct product={product}></EditProduct>)
             }

@@ -42,7 +42,7 @@ class DrawerComponent extends React.Component {
         onKeyDown={this.props.toggleDrawerHandler}
       >
         <List>
-          {[<Link to="/">Home</Link>, <Link to="/checkOut">checkOut</Link>,  <Link to="/admin">Admin</Link>,  <Link to="/logIn">Log in</Link>].map((text, index) => (
+          {[<Link to="/">Home</Link>, <Link to="/checkOut">checkOut</Link>,  <Link to="/admin">Admin</Link>,  <Link to="/logIn">Log in</Link>, <Link to="/order">order</Link>].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}

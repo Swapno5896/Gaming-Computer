@@ -13,6 +13,7 @@ import AddProductd from "./components/AddProductd/AddProductd";
 import ManageProduct from "./components/ManageProduct/ManageProduct";
 import Header from './components/Header/Header'
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import Order from "./components/Order/Order";
 export const UserContext = createContext();
 function App() {
   
@@ -26,7 +27,7 @@ console.log(addedProduct);
               <Router>
                 <Header></Header>
               <div>
-                <h1> email :{loggedInUser.email},addedProduct name :{addedProduct.name} .</h1>
+                {/* <h1> email :{loggedInUser.email},addedProduct name :{addedProduct.name} .</h1> */}
             
 
                 {/* A <Switch> looks through its children <Route>s and
@@ -38,12 +39,15 @@ console.log(addedProduct);
                   <Route path='/logIn'>
                   <LogIn></LogIn>
                   </Route>
+                  <PrivateRoute path='/order'>
+                    <Order></Order>
+                  </PrivateRoute>
                   <PrivateRoute path='/checkOut'>
                     <CheckOut/>
                   </PrivateRoute>
-                  <Route path='/admin'>
+                  <PrivateRoute path='/admin'>
                     <Admin></Admin>
-                  </Route>
+                  </PrivateRoute>
                 </Switch>
                 <Route path='/admin/addProduct'>
                     <AddProductd></AddProductd>

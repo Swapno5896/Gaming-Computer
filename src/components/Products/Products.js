@@ -5,36 +5,20 @@ import Grid from '@material-ui/core/Grid';
 import './Product.css'
 import { useContext } from 'react';
 import { UserContext } from '../../App';
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     flexGrow: 1,
-//   },
-//   paper: {
-//     padding: theme.spacing(2),
-//     textAlign: 'center',
-//     color: theme.palette.text.secondary,
-//   },
-// }));
+import { useHistory } from 'react-router-dom';
 const Products = (props) => {
+    const history = useHistory()
     const {name,photoUrl,features,price} =props.product
     const [loggedInUser, setLoggedInUser,addedProduct, setAddedProduct] = useContext(UserContext);
-    // console.log(props.product,features);
-    // const classes = useStyles();
     const handelBuyBtn = (event) =>{
-       
-
-// console.log(name,photoUrl,price);
-// console.log(new Date());
 let newProduct = {...addedProduct}
 // name:"",price:"",photoUrl:"",BuingDate:""
 newProduct.name =name
 newProduct.price =price
 newProduct.photoUrl =photoUrl
 newProduct.BuingDate =new Date()
-
-
-
 setAddedProduct(newProduct)
+history.push(`/checkOut`);
     }
     return (
         
