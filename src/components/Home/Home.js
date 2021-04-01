@@ -36,11 +36,11 @@ const Home = () => {
     },[])
     return (
         <div style={{margin:'0px 20%'}}>
-<h3>this is home</h3>
+
 
 <Grid container spacing={3}>
         {
-            products.map(product=><Products product={product}></Products>)
+            products.map(product=><Products key={product._id} product={product}></Products>)
         }
       
       </Grid>

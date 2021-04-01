@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,37 +12,48 @@ import Admin from "./components/Admin/Admin";
 import AddProductd from "./components/AddProductd/AddProductd";
 import ManageProduct from "./components/ManageProduct/ManageProduct";
 import Header from './components/Header/Header'
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+export const UserContext = createContext();
 function App() {
+  
+  const [loggedInUser, setLoggedInUser] = useState({name:"",email:"",photoUrl:""})
+  const [addedProduct, setAddedProduct] = useState({name:"",price:"",photoUrl:"",BuingDate:new Date()})
+console.log(addedProduct);
   return (
-    <Router>
-      <Header></Header>
-    <div>
-   
+    <UserContext.Provider value = {[loggedInUser, setLoggedInUser,addedProduct, setAddedProduct]}>
 
-      {/* A <Switch> looks through its children <Route>s and
-          renders the first one that matches the current URL. */}
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path='/logIn'>
-         <LogIn></LogIn>
-        </Route>
-        <Route path='/checkOut'>
-          <CheckOut/>
-        </Route>
-        <Route path='/admin'>
-          <Admin></Admin>
-        </Route>
-      </Switch>
-      <Route path='/admin/addProduct'>
-          <AddProductd></AddProductd>
-        </Route>
-        <Route path='/admin/manageProduct'>
-         <ManageProduct></ManageProduct>
-        </Route>
-    </div>
-  </Router>
+  
+              <Router>
+                <Header></Header>
+              <div>
+                <h1> email :{loggedInUser.email},addedProduct name :{addedProduct.name} .</h1>
+            
+
+                {/* A <Switch> looks through its children <Route>s and
+                    renders the first one that matches the current URL. */}
+                <Switch>
+                  <Route exact path="/">
+                    <Home />
+                  </Route>
+                  <Route path='/logIn'>
+                  <LogIn></LogIn>
+                  </Route>
+                  <PrivateRoute path='/checkOut'>
+                    <CheckOut/>
+                  </PrivateRoute>
+                  <Route path='/admin'>
+                    <Admin></Admin>
+                  </Route>
+                </Switch>
+                <Route path='/admin/addProduct'>
+                    <AddProductd></AddProductd>
+                  </Route>
+                  <Route path='/admin/manageProduct'>
+                  <ManageProduct></ManageProduct>
+                  </Route>
+              </div>
+            </Router>
+  </UserContext.Provider>
   );
 }
 
