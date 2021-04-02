@@ -29,8 +29,8 @@ const CheckOut = () => {
 }
     return (
         <div style={{margin:'50px 35%', display:'flex'}}>
-        
-            {addedProduct.name} ?
+        {
+            addedProduct.name ?
                 <div>
                 <img style={{width:'50px'}} src={addedProduct.photoUrl} alt=""/>
                 <p>{addedProduct.name}</p>
@@ -38,7 +38,7 @@ const CheckOut = () => {
                 <button onClick={handelCheckOut}>Check Out</button>
                 </div>
             :
-            <h2>You havent added anythig</h2>
+            <h2>You havent added anythig</h2>}
         
         </div>
     );
