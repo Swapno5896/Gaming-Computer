@@ -14,7 +14,7 @@ via re akn o live deply kore ne
  ### server side github code : https://github.com/Porgramming-Hero-web-course/full-stack-server-Swapno5896
 ### Live site : https://gamingmachain.web.app/
 
-##Website feature
-1.In home page you can see some products that loaded from mongodb database
-2.Hear you can order any product by sign in
-3.You can add any product with pic, name, price
+## Website feature
+### 1.In home page you can see some products that loaded from mongodb database
+### 2.Hear you can order any product by sign in
+### 3.You can add any product with pic, name, price
