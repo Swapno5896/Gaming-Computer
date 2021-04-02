@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import FakeData from '../FakeData/GamingMachain'
 import Products from '../Products/Products';
 // material ui grid
 import { makeStyles } from '@material-ui/core/styles';
