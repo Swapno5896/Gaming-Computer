@@ -19,7 +19,7 @@ function App() {
   
   const [loggedInUser, setLoggedInUser] = useState({name:"",email:"",photoUrl:""})
   const [addedProduct, setAddedProduct] = useState({name:"",price:"",photoUrl:"",BuingDate:new Date()})
-console.log(addedProduct);
+// console.log(addedProduct);
   return (
     <UserContext.Provider value = {[loggedInUser, setLoggedInUser,addedProduct, setAddedProduct]}>
 
@@ -41,6 +41,9 @@ console.log(addedProduct);
                   </Route>
                   <PrivateRoute path='/order'>
                     <Order></Order>
+                  </PrivateRoute>
+                  <PrivateRoute path='/checkOut/:_id'>
+                    <CheckOut/>
                   </PrivateRoute>
                   <PrivateRoute path='/checkOut'>
                     <CheckOut/>

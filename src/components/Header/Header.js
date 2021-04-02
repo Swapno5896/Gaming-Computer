@@ -8,10 +8,6 @@ class App extends React.Component {
   };
 
   toggleDrawer = () => {
-    // if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-    //   return;
-    // }
-
     this.setState({ left: false });
   };
 

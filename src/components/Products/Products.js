@@ -8,20 +8,12 @@ import { UserContext } from '../../App';
 import { useHistory } from 'react-router-dom';
 const Products = (props) => {
     const history = useHistory()
-    const {name,photoUrl,features,price} =props.product
+    const {name,photoUrl,features,price,_id} =props.product
     const [loggedInUser, setLoggedInUser,addedProduct, setAddedProduct] = useContext(UserContext);
     const handelBuyBtn = (event) =>{
-let newProduct = {...addedProduct}
-// name:"",price:"",photoUrl:"",BuingDate:""
-newProduct.name =name
-newProduct.price =price
-newProduct.photoUrl =photoUrl
-newProduct.BuingDate =new Date()
-setAddedProduct(newProduct)
-history.push(`/checkOut`);
+    history.push(`/checkOut/${_id}`);
     }
     return (
-        
         <Grid item xs={12} sm={6} md={4} >
             <Paper style={{height:'550px'}}>
                 <div style={{textAlign:'center'}}>
@@ -37,7 +29,6 @@ history.push(`/checkOut`);
                     <button onClick={()=>handelBuyBtn()}  className='buyBtn'>Buy now</button>
                 </div>
                 </div>
-            
             </Paper>
       </Grid>
         

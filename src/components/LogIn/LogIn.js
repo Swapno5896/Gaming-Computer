@@ -16,8 +16,6 @@ const LogIn = () => {
         firebase.initializeApp(firebaseConfig);
     }
     
-    
-
 const handelGoogleSignIn = () =>{
     var provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth()
@@ -25,14 +23,9 @@ const handelGoogleSignIn = () =>{
     .then((result) => {
       /** @type {firebase.auth.OAuthCredential} */
       var credential = result.credential;
-  
-      // This gives you a Google Access Token. You can use it to access the Google API.
-      var token = credential.accessToken;
-      // The signed-in user info. name:"",email:"",photoUrl:""})
+        var token = credential.accessToken;
       var user = result.user;
-   
       const {displayName, email,photoURL} = result.user;
-      console.log(photoURL);
       const signedInUser = {...loggedInUser}
       signedInUser.name = displayName;
       signedInUser.email = email;
@@ -51,14 +44,11 @@ const handelGoogleSignIn = () =>{
     });
 }
 
-
-    
     return (
         <div>
-            <h2>this is log in</h2>
+            <h2>Please, log in to procid..</h2>
             <button onClick={handelGoogleSignIn}>LogIn with google</button>
         </div>
     );
 };
-// npm install -g firebase-tools
 export default LogIn;

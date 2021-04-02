@@ -9,7 +9,7 @@ const EditProduct = (props) => {
     const {name,photoUrl,features,price,_id} =props.product
 
     const deleteProduct =(event)=>{
-   console.log(event.target.value);
+  //  console.log(event.target.value);
           fetch(`https://gamenig.herokuapp.com/delet/${_id}`,{
             method:'DElete'
           })

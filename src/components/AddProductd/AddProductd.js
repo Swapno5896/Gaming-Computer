@@ -46,7 +46,7 @@ const AddProductd = () => {
         newProdct.isBtnDisable = false
       const newProdct2 ={...newProdct}
         setAddedProduct(newProdct2)
-        console.log(response.data.data.display_url);
+        // console.log(response.data.data.display_url);
         
         newProdct.photoUrl = response.data.data.display_url
         const newProdct3={...newProdct}

@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = () => {
     const classes = useStyles();
-
     const [products, setProducts] = useState([])
     const [isLoaded, setIsLoaded] = useState(true);
     useEffect(()=>{
